@@ -25,9 +25,9 @@ Resultados
 
 Matriz de confusión en validación: 95.8 % de aciertos en Ambiente y 89.3 % en Aplausos.
 
-![Arquitectura del modelo](docs/arquitectura.png)
-![Métricas y matriz de confusión](docs/metricas.png)
-![Explorador de datos](docs/explorador-datos.png)
+![Arquitectura del modelo](arquitectura.png)
+![Métricas y matriz de confusión](metricas.png)
+![Explorador de datos](explorador-datos.png)
 
 ---
 
