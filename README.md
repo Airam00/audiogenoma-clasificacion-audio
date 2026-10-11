@@ -1,8 +1,12 @@
+# Audiogenoma
+
 Proyecto escolar de análisis de audio que combina dos enfoques: un **clasificador de sonidos** con aprendizaje automático y un sistema de **ADN visual** que traduce el audio a un código simbólico y a una visualización tipo mandala.
 
 **Autores:** proyecto de colaboración entre Nicole Airam Becerra Cordero, Camila Pérez González, Samuel Isaac García Torres y Kevin Ramirez Soto, estudiantes de CONALEP Plantel Tlaquepaque.
 
-1. Clasificador de audio (Edge Impulse)
+---
+
+## 1. Clasificador de audio (Edge Impulse)
 
 Modelo que distingue dos clases: **Ambiente** y **Aplausos**.
 
@@ -11,7 +15,7 @@ Modelo que distingue dos clases: **Ambiente** y **Aplausos**.
 - **Entrenamiento:** 135 ciclos, tasa de aprendizaje de 0.001, aumento de datos con ruido bajo, entrenado en CPU.
 - **Modelo final:** cuantizado a int8; rendimiento estimado con EON Compiler (optimizado en RAM).
 
-Resultados
+### Resultados
 
 | Métrica | Valor |
 |---|---|
@@ -25,9 +29,9 @@ Resultados
 
 Matriz de confusión en validación: 95.8 % de aciertos en Ambiente y 89.3 % en Aplausos.
 
-![Arquitectura del modelo](arquitectura.png)
-![Métricas y matriz de confusión](metricas.png)
-![Explorador de datos](explorador-datos.png)
+<img src="arquitectura.png" alt="Arquitectura del modelo" width="260">
+<img src="metricas.png" alt="Métricas y matriz de confusión" width="260">
+<img src="explorador-datos.png" alt="Explorador de datos" width="260">
 
 ---
 
@@ -60,17 +64,16 @@ Python, NumPy, SoundDevice, SoundFile, Matplotlib y Edge Impulse.
 ## Estructura del repositorio
 
 ```
-audiogenoma/
+audiogenoma-clasificacion-audio/
 ├── README.md
 ├── LICENSE
-└── docs/
-    ├── arquitectura.png
-    ├── metricas.png
-    └── explorador-datos.png
+├── arquitectura.png
+├── metricas.png
+└── explorador-datos.png
 ```
 
-Este repositorio contiene únicamente la documentación del proyecto.
+Este repositorio contiene únicamente la documentación del proyecto. El código fuente del sistema no se publica.
 
 ## Derechos
 
-Audiogenoma es un proyecto de colaboración de sus autores (Nicole Airam Becerra Cordero, Camila Pérez González, Samuel Isaac García Torres y Kevin Ramirez Soto), quienes conservan en conjunto todos los derechos sobre él. No se permite usar, copiar, modificar ni distribuir el sistema ni su documentación sin autorización por escrito de los autores. Su revisión es posible solo a solicitud y con su autorización. Consulta el archivo `LICENSE`.
+Audiogenoma es un proyecto de colaboración de sus autores (Nicole Airam Becerra Cordero, Camila Pérez González, Samuel Isaac García Torres y Kevin Ramirez Soto), quienes conservan en conjunto todos los derechos sobre él. No se permite usar, copiar, modificar ni distribuir el sistema ni su documentación sin autorización por escrito de los autores. Su revisión es posible solo a solicitud y con su autorización. Consulta el archivo [LICENSE](LICENSE).
